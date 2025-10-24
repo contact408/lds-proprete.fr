@@ -7,6 +7,10 @@
   <meta name="keywords" content="nettoyage, propreté, services professionnels, LDS Propreté" />
   <title>LDS Propreté - Entretien et Nettoyage Professionnel</title>
   <style>
+    /* Reset basique pour éviter les bugs de layout */
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 0; }
+
     /* --- PALETTE LDS --- */
     :root {
       --marine: #0a1f44;
@@ -17,7 +21,6 @@
 
     /* --- GLOBAL --- */
     body {
-      margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       color: var(--marine);
       background-color: var(--blanc);
@@ -35,9 +38,25 @@
       flex-wrap: wrap;
     }
 
+    header .logo {
+      height: 60px;
+      border-radius: 8px;
+      background-color: var(--bordeaux); /* Fallback si image manquante */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blanc);
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
     header img {
       height: 60px;
       border-radius: 8px;
+    }
+
+    nav {
+      display: flex;
     }
 
     nav a {
@@ -83,6 +102,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s;
+      display: inline-block;
     }
 
     .btn:hover {
@@ -138,3 +158,78 @@
     /* --- RESPONSIVITÉ --- */
     @media (max-width: 768px) {
       header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo LDS Propreté" onerror="this.style.display='none'; this.parentElement.innerHTML='LDS Propreté';">
+    </div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="accueil" class="hero">
+    <h1>LDS Propreté</h1>
+    <p>Vos experts en nettoyage professionnel pour des espaces impeccables, adaptés à vos besoins.</p>
+    <a href="#contact" class="btn">Demander un devis</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <h3>Nettoyage de bureaux</h3>
+        <p>Des espaces de travail propres et accueillants pour booster la productivité.</p>
+      </div>
+      <div class="service-item">
+        <h3>Nettoyage commercial</h3>
+        <p>Entretien de magasins et commerces pour une image professionnelle.</p>
+      </div>
+      <div class="service-item">
+        <h3>Nettoyage résidentiel</h3>
+        <p>Services sur mesure pour les copropriétés et résidences privées.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour toute demande, contactez-nous par email ou téléphone.</p>
+    <p>Email: <a href="mailto:contact@ldsproprete.fr">contact@ldsproprete.fr</a></p>
+    <p>Téléphone: <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LDS Propreté. Tous droits réservés. | <a href="#contact">Contact</a></p>
+  </footer>
+</body>
+</html>
