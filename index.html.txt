@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LDS Propreté | Entreprise de nettoyage à Paris</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+    header {
+      background-color: #153E6F;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #8B1E42;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: inline-block;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background-color: #a42b54;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.7;
+    }
+    h1, h2 {
+      color: #153E6F;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    h3 {
+      color: #8B1E42;
+      margin-top: 40px;
+    }
+    .hero {
+      background-color: #E7EEF6;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+    }
+    .btn {
+      background-color: #153E6F;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #0f2d4f;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 30px;
+      background-color: #E7EEF6;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #8B1E42;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="URL_DU_LOGO" alt="Logo LDS Propreté">
+    <h1>LDS Propreté</h1>
+    <p>Entreprise de propreté à Paris et Île-de-France</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Nos services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="accueil" class="hero">
+    <h1>Votre partenaire propreté</h1>
+    <p>LDS Propreté est une entreprise spécialisée dans l’entretien et la propreté des bureaux, immeubles, copropriétés et commerces à Paris et en Île-de-France. Nous proposons des prestations sur mesure, adaptées à vos besoins et à votre budget.</p>
+    <a href="mailto:contact@lds-proprete.fr" class="btn">Demander un devis</a>
+  </section>
+
+  <section id="services">
+    <h2>Nos prestations de propreté</h2>
+
+    <h3>Nettoyage de bureaux</h3>
+    <p>Entretien régulier ou ponctuel des locaux professionnels : dépoussiérage, sols, sanitaires, espaces communs, salles de réunion.</p>
+
+    <h3>Copropriétés et immeubles</h3>
+    <p>Nettoyage des halls, escaliers, ascenseurs, locaux poubelles et parties communes. Interventions planifiées avec les syndics et gestionnaires immobiliers.</p>
+
+    <h3>Nettoyage fin de chantier</h3>
+    <p>Remise en état complète après travaux, avant livraison ou aménagement des locaux.</p>
+
+    <h3>Nettoyage après location, sinistres, déménagement</h3>
+    <p>Interventions spécifiques pour remettre un logement ou un local en parfait état avant une nouvelle occupation, après un sinistre ou un déménagement.</p>
+  </section>
+
+  <section id="apropos" style="background-color:#E7EEF6;">
+    <h2>À propos de LDS Propreté</h2>
+
+    <h3>Notre histoire</h3>
+    <p>Fondée en [année], LDS Propreté met son savoir-faire au service des entreprises, commerces et syndics d’Île-de-France. Nous croyons qu’un environnement propre favorise le bien-être et la performance.</p>
+
+    <h3>Nos valeurs</h3>
+    <p>Professionnalisme • Confiance • Réactivité • Satisfaction client</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p style="text-align:center;">📧 <a href="mailto:contact@lds-proprete.fr">contact@lds-proprete.fr</a></p>
+    <p style="text-align:center;">📞 Appelez-nous pour toute demande d’information ou de devis.</p>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="mailto:contact@lds-proprete.fr" class="btn" style="background-color:#8B1E42;">Envoyer un message</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 <strong>LDS Propreté</strong> – Tous droits réservés <br>
+    <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+  </footer>
+
+</body>
+</html>
